@@ -36,3 +36,39 @@ button:active {
   opacity: 0.6;
   margin-left: 0.3em;
 }
+#insect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.insect-card {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+}
+
+.insect-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.insect-card span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.insect-card input {
+  display: none;
+}
+
+.insect-card:has(input:checked) {
+  border-color: #2c7be5;
+  background: #eef4ff;
+}
+
