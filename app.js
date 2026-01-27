@@ -3,7 +3,7 @@
  ***********************/
 
 // ===== VERSION =====
-const APP_VERSION = "1.0.4";
+const APP_VERSION = "1.0.5";
 document.getElementById("version").textContent = ` v${APP_VERSION}`;
 
 // ===== SUPABASE =====
