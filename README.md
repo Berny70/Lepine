@@ -6,4 +6,4 @@
 
 📍 récupère GPS (sans bloquer)
 
-☁️ upload image + métadonnées Supabase
+☁️ upload image + choix de l'insecte + métadonnées vers la Supabase
