@@ -60,6 +60,9 @@ photoInput.addEventListener("change", async e => {
 // ===== ENVOI =====
 sendBtn.onclick = async () => {
   if (!resizedBlob) return alert("Pas de photo");
+  
+  const selectedInsects = getSelectedInsects();
+  console.log("Insectes sélectionnés :", selectedInsects);
 
   statusTxt.textContent = "☁️ Envoi…";
 
@@ -129,6 +132,12 @@ function showMap(lat, lon, accuracy) {
     map.setView([lat, lon], 16);
     marker.setLatLng([lat, lon]);
   }
+}
+// ===== récupération de la case cochée ===
+function getSelectedInsects() {
+  return Array.from(
+    document.querySelectorAll("#insect-grid input:checked")
+  ).map(i => i.value);
 }
 
 // ===== SERVICE WORKER =====
