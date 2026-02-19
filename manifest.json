@@ -1,0 +1,9 @@
+{
+  "name": "Lepine",
+  "short_name": "Lepine",
+  "start_url": "/Lepine/",
+  "scope": "/Lepine/",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#1e1e1e"
+}

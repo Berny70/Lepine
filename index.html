@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lepine</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="/Lepine/manifest.json">
+  <meta name="theme-color" content="#1e1e1e">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/Lepine/style.css">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+  <h1>📸 application "Lépine"
+     <span id="version"></span>
+  </h1>
+
+  <!-- Bouton principal -->
+  <button id="photoBtn">Prendre une photo</button>
+
+  <!-- Input caméra caché -->
+  <input
+    type="file"
+    id="photoInput"
+    accept="image/*"
+    capture="environment"
+    hidden
+  >
+
+  <!-- Statut -->
+  <p id="status">En attente…</p>
+
+  <!-- Aperçu photo -->
+  <img id="preview" />
+
+  <!-- Envoi -->
+  <button id="sendBtn">Envoyer</button>
+
+  <!-- App -->
+  <script src="/Lepine/app.js"></script>
+<!-- Mini-carte -->
+<div id="map"></div>
+
+<!-- Leaflet -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+</body>
+</html>
