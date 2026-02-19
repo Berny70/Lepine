@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const CACHE_NAME = "lepine-v1.0.5";
 
 self.addEventListener("install", event => {
@@ -32,4 +33,12 @@ self.addEventListener("fetch", event => {
   event.respondWith(
     caches.match(event.request).then(r => r || fetch(event.request))
   );
+=======
+self.addEventListener("install", () => {
+  self.skipWaiting();
+});
+
+self.addEventListener("activate", event => {
+  event.waitUntil(self.clients.claim());
+>>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
 });

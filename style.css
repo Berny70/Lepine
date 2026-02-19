@@ -4,20 +4,85 @@ body {
   padding: 1rem;
 }
 
+<<<<<<< HEAD
 img {
   max-width: 100%;
   margin-top: 1rem;
   border-radius: 8px;
 }
+=======
+button {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: #2c7be5;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#preview {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+>>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
 #map {
   height: 220px;
   margin-top: 1rem;
   border-radius: 12px;
   display: none;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
 #version {
   font-size: 0.6em;
   opacity: 0.6;
   margin-left: 0.3em;
 }
+<<<<<<< HEAD
+=======
+#insect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.insect-card {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+}
+
+.insect-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.insect-card span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.insect-card input {
+  display: none;
+}
+
+.insect-card:has(input:checked) {
+  border-color: #2c7be5;
+  background: #eef4ff;
+}
+>>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
 
