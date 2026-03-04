@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-const CACHE_NAME = "lepine-v1.0.5";
+const CACHE_NAME = "lepine-v1.0.6";
 
 self.addEventListener("install", event => {
   self.skipWaiting(); // ⚡ active immédiatement la nouvelle version
