@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Lepine</title>
 
   <!-- PWA -->
@@ -13,8 +12,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/Lepine/style.css">
 
-<<<<<<< HEAD
-=======
   <!-- Leaflet -->
   <link
     rel="stylesheet"
@@ -24,23 +21,12 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
 
->>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
   <!-- Supabase -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 
 <body>
 
-<<<<<<< HEAD
-  <h1>📸 application "Lépine"
-     <span id="version"></span>
-  </h1>
-
-  <!-- Bouton principal -->
-  <button id="photoBtn">Prendre une photo</button>
-
-  <!-- Input caméra caché -->
-=======
   <h1>
     📸 Lepine
     <span id="version"></span>
@@ -48,7 +34,6 @@
 
   <button id="photoBtn">Prendre une photo</button>
 
->>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
   <input
     type="file"
     id="photoInput"
@@ -57,69 +42,45 @@
     hidden
   >
 
-<<<<<<< HEAD
-  <!-- Statut -->
-  <p id="status">En attente…</p>
-
-  <!-- Aperçu photo -->
-  <img id="preview" />
-
-  <!-- Envoi -->
-  <button id="sendBtn">Envoyer</button>
-
-  <!-- App -->
-  <script src="/Lepine/app.js"></script>
-<!-- Mini-carte -->
-<div id="map"></div>
-
-<!-- Leaflet -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-
-=======
   <p id="status">En attente…</p>
 
   <img id="preview" />
 
   <div id="map"></div>
 
-  <script src="/Lepine/app.js"></script>
-  
-<h3>Quel insecte avez-vous observé ?</h3>
+  <h3>Quel insecte avez-vous observé ?</h3>
 
-<div id="insect-grid">
+  <div id="insect-grid">
 
-  <label class="insect-card">
-    <input type="checkbox" value="frelon_asiatique">
-    <img src="images/FA.jpg" alt="Frelon asiatique">
-    <span>Frelon asiatique</span>
-  </label>
+    <label class="insect-card">
+      <input type="checkbox" value="frelon_asiatique">
+      <img src="images/FA.jpg" alt="Frelon asiatique">
+      <span>Frelon asiatique</span>
+    </label>
 
-  <label class="insect-card">
-    <input type="checkbox" value="frelon_europeen">
-    <img src="images/FE.jpg" alt="Frelon européen">
-    <span>Frelon européen</span>
-  </label>
+    <label class="insect-card">
+      <input type="checkbox" value="frelon_europeen">
+      <img src="images/FE.jpg" alt="Frelon européen">
+      <span>Frelon européen</span>
+    </label>
 
-  <label class="insect-card">
-    <input type="checkbox" value="guepe">
-    <img src="images/guepe.jpg" alt="Guêpe">
-    <span>Guêpe</span>
-  </label>
+    <label class="insect-card">
+      <input type="checkbox" value="guepe">
+      <img src="images/guepe.jpg" alt="Guêpe">
+      <span>Guêpe</span>
+    </label>
 
-  <label class="insect-card">
-    <input type="checkbox" value="syrphe">
-    <img src="images/syrphe.jpg" alt="Syrphe">
-    <span>Syrphe (inoffensif)</span>
-  </label>
+    <label class="insect-card">
+      <input type="checkbox" value="syrphe">
+      <img src="images/syrphe.jpg" alt="Syrphe">
+      <span>Syrphe (inoffensif)</span>
+    </label>
 
-</div>
+  </div>
+
   <button id="sendBtn">Envoyer</button>
->>>>>>> 3be43c2f175881422c2b7841d405a2952a9c5e9b
+
+  <script src="/Lepine/app.js"></script>
+
 </body>
 </html>
